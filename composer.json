@@ -11,9 +11,12 @@
         "doctrine/doctrine-bundle": "^2.6",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.12",
+        "fakerphp/faker": "^1.19",
+        "friendsofsymfony/ckeditor-bundle": "^2.4",
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.5",
         "sensio/framework-extra-bundle": "^6.1",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "5.4.*",
         "symfony/console": "5.4.*",
         "symfony/doctrine-messenger": "5.4.*",
@@ -26,7 +29,7 @@
         "symfony/intl": "5.4.*",
         "symfony/mailer": "5.4.*",
         "symfony/mime": "5.4.*",
-        "symfony/monolog-bundle": "^3.0",
+        "symfony/monolog-bundle": "^3.8",
         "symfony/notifier": "5.4.*",
         "symfony/process": "5.4.*",
         "symfony/property-access": "5.4.*",
@@ -82,7 +85,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "ckeditor:install": "symfony-cmd"
         },
         "post-install-cmd": [
             "@auto-scripts"
